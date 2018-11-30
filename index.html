@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>飞机大战</title>
+	<style type="text/css">
+		#map {
+			width: 320px;
+			height: 568px;
+			position: relative;
+			margin: 50px auto;
+			overflow: hidden;
+		}
+		#start {
+			width: 320px;
+			height: 568px;
+			background: url(images/start_bg.png);
+		}
+		#game {
+			width: 320px;
+			height: 568px;
+			background: url(images/bg.png);
+			position: relative;
+		}
+		#fighter {
+			width: 66px;
+			height: 80px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url(images/self.gif);
+		}
+		#over {
+			width: 320px;
+			height: 568px;
+			background: url(images/bg.png);
+			position: relative;
+			text-align: center;
+		}
+		#over h3 {
+			color: #000;
+			line-height: 300px;
+		}
+		#over p {
+			color: #000;
+			line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="map">
+		<div id="start"></div>
+		<div id="game">
+			<div id="fighter"></div>
+		</div>
+		<div id="over">
+			<h3>Game Over</h3>
+			<p>点击页面继续游戏</p>
+		</div>
+	</div>
+
+	<script src="js/tools.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/fighter.js"></script>
+	<script src="js/role.js"></script>
+	<script src="js/bullet.js"></script>
+	<script src="js/enemy.js"></script>
+	<script src="js/game.js"></script>
+</body>
+</html>
